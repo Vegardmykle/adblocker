@@ -1,0 +1,63 @@
+# Sporingsdomener som blokkeres (ruleset "trackers").
+# Én oppføring per linje. Et vanlig domene blokkerer domenet og alle underdomener.
+# Linjer som starter med "||" brukes direkte som declarativeNetRequest-urlFilter
+# (brukes for å blokkere bare sporingsskriptet og ikke hele domenet).
+# Kjør `npm run build:rules` etter endringer.
+
+# Google
+google-analytics.com
+analytics.google.com
+||googletagmanager.com/gtag/js
+
+# Meta, TikTok, LinkedIn, Snapchat, Pinterest, X, Microsoft
+||connect.facebook.net^*/fbevents.js
+||facebook.com/tr/
+||facebook.com/tr?
+analytics.tiktok.com
+px.ads.linkedin.com
+snap.licdn.com
+tr.snapchat.com
+||sc-static.net/scevent.min.js
+ct.pinterest.com
+static.ads-twitter.com
+analytics.twitter.com
+bat.bing.com
+clarity.ms
+
+# Måling og analyse
+scorecardresearch.com
+quantserve.com
+hotjar.com
+hotjar.io
+mouseflow.com
+fullstory.com
+crazyegg.com
+heapanalytics.com
+mxpnl.com
+api-js.mixpanel.com
+cdn.segment.com
+api.segment.io
+api.amplitude.com
+api2.amplitude.com
+cdn.amplitude.com
+chartbeat.com
+chartbeat.net
+nr-data.net
+hs-analytics.net
+statcounter.com
+histats.com
+mc.yandex.ru
+
+# Datameglere og DMP-er
+omtrdc.net
+demdex.net
+2o7.net
+everesttech.net
+krxd.net
+bluekai.com
+exelator.com
+agkn.com
+tapad.com
+crwdcntrl.net
+rlcdn.com
+adsymptotic.com

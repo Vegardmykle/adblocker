@@ -20,14 +20,23 @@
     },
 
     "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "js": [ "cosmetic-filters.js", "content.js" ],
+        "matches": [ "<all_urls>" ],
+        "run_at": "document_start",
+        "all_frames": true
     }],
+
+    "declarative_net_request": {
+        "rule_resources": [
+            { "id": "ads", "enabled": true, "path": "rules_ads.json" },
+            { "id": "trackers", "enabled": true, "path": "rules_trackers.json" }
+        ]
+    },
 
     "action": {
         "default_popup": "popup.html",
         "default_icon": "images/toolbar-icon.svg"
     },
 
-    "permissions": [ ]
+    "permissions": [ "declarativeNetRequest", "storage", "activeTab" ]
 }

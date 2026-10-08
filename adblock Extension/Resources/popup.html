@@ -5,7 +5,47 @@
     <link rel="stylesheet" href="popup.css">
     <script type="module" src="popup.js"></script>
 </head>
-<body>
-    <strong>Hello World!</strong>
+<body class="loading">
+    <header>
+        <svg class="logo" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M4.69 0h6.62L16 4.69v6.62L11.31 16H4.69L0 11.31V4.69zM5.31 1.5 1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5z"/>
+            <rect x="4" y="7" width="8" height="2" rx="1"/>
+        </svg>
+        <div class="titles">
+            <h1 data-i18n="extension_name"></h1>
+            <p id="status"></p>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="enabled" role="switch" data-i18n-label="popup_toggle_label">
+            <span class="track"></span>
+        </label>
+    </header>
+
+    <section id="site">
+        <p id="host"></p>
+
+        <div class="stats">
+            <div class="stat" id="blocked-stat" hidden>
+                <span class="value" id="blocked-count">0</span>
+                <span class="label" data-i18n="popup_blocked"></span>
+            </div>
+            <div class="stat">
+                <span class="value" id="hidden-count">0</span>
+                <span class="label" data-i18n="popup_hidden"></span>
+            </div>
+        </div>
+
+        <button id="site-toggle" type="button"></button>
+    </section>
+
+    <footer>
+        <label class="row">
+            <span data-i18n="popup_block_trackers"></span>
+            <span class="switch small">
+                <input type="checkbox" id="block-trackers" role="switch">
+                <span class="track"></span>
+            </span>
+        </label>
+    </footer>
 </body>
 </html>

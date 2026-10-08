@@ -1,0 +1,50 @@
+{
+    "extension_name": {
+        "message": "Adblock",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Blokkerer reklame og sporere, og skjuler tomme reklamefelt på nettsider.",
+        "description": "Description of what the extension does."
+    },
+    "popup_enabled": {
+        "message": "Blokkering er på",
+        "description": "Popup status when blocking is on."
+    },
+    "popup_disabled": {
+        "message": "Blokkering er av",
+        "description": "Popup status when blocking is turned off everywhere."
+    },
+    "popup_paused": {
+        "message": "Pauset på dette nettstedet",
+        "description": "Popup status when the current site is on the allowlist."
+    },
+    "popup_toggle_label": {
+        "message": "Blokker reklame overalt",
+        "description": "Accessible label for the main on/off switch."
+    },
+    "popup_blocked": {
+        "message": "blokkerte forespørsler",
+        "description": "Label under the number of blocked network requests."
+    },
+    "popup_hidden": {
+        "message": "skjulte reklamefelt",
+        "description": "Label under the number of hidden ad elements."
+    },
+    "popup_pause_site": {
+        "message": "Pause på dette nettstedet",
+        "description": "Button that adds the current site to the allowlist."
+    },
+    "popup_resume_site": {
+        "message": "Blokker reklame her igjen",
+        "description": "Button that removes the current site from the allowlist."
+    },
+    "popup_block_trackers": {
+        "message": "Blokker sporere",
+        "description": "Switch for the tracker ruleset."
+    },
+    "popup_no_site": {
+        "message": "Ingen nettside i denne fanen",
+        "description": "Shown when the active tab is not a normal web page."
+    }
+}

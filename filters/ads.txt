@@ -1,0 +1,93 @@
+# Reklamedomener som blokkeres (ruleset "ads").
+# Én oppføring per linje. Et vanlig domene blokkerer domenet og alle underdomener.
+# Linjer som starter med "||" brukes direkte som declarativeNetRequest-urlFilter.
+# Kjør `npm run build:rules` etter endringer.
+
+# Google
+doubleclick.net
+googlesyndication.com
+googleadservices.com
+googletagservices.com
+adservice.google.com
+
+# Store annonsebørser og SSP/DSP-er
+adnxs.com
+adsrvr.org
+adform.net
+adformdsp.net
+rubiconproject.com
+pubmatic.com
+openx.net
+criteo.com
+criteo.net
+casalemedia.com
+indexww.com
+amazon-adsystem.com
+media.net
+smartadserver.com
+yieldmo.com
+33across.com
+sharethrough.com
+triplelift.com
+teads.tv
+bidswitch.net
+contextweb.com
+spotxchange.com
+spotx.tv
+springserve.com
+yieldlab.net
+adition.com
+improvedigital.com
+360yield.com
+smaato.net
+lijit.com
+emxdgt.com
+onetag-sys.com
+richaudience.com
+adkernel.com
+adscale.de
+adup-tech.com
+seedtag.com
+gumgum.com
+kargo.com
+undertone.com
+adroll.com
+mathtag.com
+serving-sys.com
+flashtalking.com
+adzerk.net
+adhese.com
+yieldlove.com
+advertising.com
+
+# Nordiske/norske annonseleverandører
+adnuntius.com
+livewrapped.com
+lwadm.com
+relevant-digital.com
+
+# Annonseverifisering
+moatads.com
+adsafeprotected.com
+doubleverify.com
+
+# Innholdsanbefalinger / "sponset innhold"
+taboola.com
+outbrain.com
+zemanta.com
+mgid.com
+revcontent.com
+zergnet.com
+
+# Pop-under og aggressive nettverk
+propellerads.com
+popads.net
+popcash.net
+adsterra.com
+exoclick.com
+juicyads.com
+trafficjunky.net
+
+# Annet
+buysellads.com
+carbonads.net

@@ -1,9 +1,9 @@
 function show(enabled, useSettingsInsteadOfPreferences) {
-    if (useSettingsInsteadOfPreferences) {
-        document.getElementsByClassName('state-on')[0].innerText = "adblock’s extension is currently on. You can turn it off in the Extensions section of Safari Settings.";
-        document.getElementsByClassName('state-off')[0].innerText = "adblock’s extension is currently off. You can turn it on in the Extensions section of Safari Settings.";
-        document.getElementsByClassName('state-unknown')[0].innerText = "You can turn on adblock’s extension in the Extensions section of Safari Settings.";
-        document.getElementsByClassName('open-preferences')[0].innerText = "Quit and Open Safari Settings…";
+    if (!useSettingsInsteadOfPreferences) {
+        document.getElementsByClassName('state-on')[0].innerText = "Adblock er slått på. Du kan slå den av i Safari-valgene under Utvidelser.";
+        document.getElementsByClassName('state-off')[0].innerText = "Adblock er slått av. Slå den på i Safari-valgene under Utvidelser, og gi den tilgang til «Alle nettsteder» for å skjule reklamefelt.";
+        document.getElementsByClassName('state-unknown')[0].innerText = "Du kan slå på Adblock i Safari-valgene under Utvidelser.";
+        document.getElementsByClassName('open-preferences')[0].innerText = "Avslutt og åpne Safari-valg …";
     }
 
     if (typeof enabled === "boolean") {
